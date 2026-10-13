@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<style>
+@page{size:A4;margin:10mm 11mm 9mm}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Pretendard','Malgun Gothic','Apple SD Gothic Neo',sans-serif;color:#1c2740;font-size:9.4pt;line-height:1.45;word-break:keep-all}
+.hd{background:#0d1f3c;color:#fff;border-radius:3mm;padding:4mm 6mm;display:flex;justify-content:space-between;align-items:flex-end}
+.hd .k{font-size:8.5pt;letter-spacing:.1em;color:#8fb0ff;font-weight:700}
+.hd h1{font-size:14.5pt;font-weight:800;margin-top:1.5mm;line-height:1.3}
+.hd .r{text-align:right;font-size:8.5pt;color:#c9d5ec;line-height:1.5}
+.lead{margin:3mm 0;padding:2.2mm 3.5mm;background:#eaf0ff;border-left:1.2mm solid #1b4dff;border-radius:1.5mm;font-size:9.4pt;font-weight:600;color:#0d1f3c}
+h2{font-size:10.5pt;font-weight:800;color:#0d1f3c;margin:3mm 0 1.5mm;display:flex;align-items:center;gap:2mm}
+h2 i{display:inline-block;width:5.5mm;height:5.5mm;border-radius:50%;background:#1b4dff;color:#fff;font-style:normal;font-size:8.5pt;text-align:center;line-height:5.5mm}
+table{width:100%;border-collapse:collapse;font-size:8.7pt}
+th,td{border-bottom:.25mm solid #e1e7f2;padding:1.3mm 1.8mm;text-align:left;vertical-align:top}
+th{background:#f4f6fa;color:#5a6478;font-size:8.6pt;font-weight:700}
+td.s{font-weight:800;white-space:nowrap}
+.bad{color:#b42318}.ok{color:#1f7a4d}.warn{color:#9a5b00}
+.steps td:first-child{font-weight:800;color:#1b4dff;white-space:nowrap}
+.note{margin-top:2.5mm;font-size:8.3pt;color:#5a6478;background:#fafbfe;border:.25mm solid #e1e7f2;border-radius:2mm;padding:2.5mm 3.5mm}
+.note b{color:#1c2740}
+.ft{margin-top:3mm;font-size:7.5pt;color:#8a94a8;display:flex;justify-content:space-between;border-top:.25mm solid #e1e7f2;padding-top:2mm}
+code{font-family:Consolas,monospace;font-size:9pt;background:#f1f4fa;padding:0 1mm;border-radius:1mm}
+</style></head><body>
+<div class="hd"><div><div class="k">검색 노출 진단 · 전달용</div><h1>개념상상 홈페이지(gnss.co.kr)<br>검색에 안 잡히는 이유와 할 일 4가지</h1></div>
+<div class="r">작성 2026-10-13<br>박민수T (중대부고 반)<br>mlabmath.com 등록 경험 기준</div></div>
+
+<div class="lead">"개념상상 수학학원 대치동"으로 검색하면 학원 홈페이지 대신 학원 정보 사이트(프롬피)의 소개 한 건만 나옵니다. 홈페이지는 검색 로봇에게 거의 빈 페이지로 보이고, 검색 포털에 등록도 안 되어 있습니다. 아래 1·2번만 해도 "개념상상 대치관" 검색에 학원이 바로 뜹니다.</div>
+
+<h2><i>1</i>진단 결과</h2>
+<table>
+<tr><th style="width:34mm">항목</th><th style="width:22mm">상태</th><th>내용</th></tr>
+<tr><td>검색 로봇 허용 · 사이트맵</td><td class="s ok">정상</td><td>robots.txt 허용, 사이트맵 2개(지점 70개 주소 포함) 있음</td></tr>
+<tr><td>로봇이 읽는 본문 글자</td><td class="s bad">약 280자</td><td>화면은 꽉 차 보이지만 글이 스크립트로 그려져 로봇 눈에는 제목·설명 몇 줄뿐. 지점 이름·주소·전화도 글자가 아니라 스크립트 안에 있고, 지점 전화 링크는 비어 있음</td></tr>
+<tr><td>검색 포털 등록(구글·빙·네이버)</td><td class="s bad">안 됨(추정)</td><td>구글·빙 검색에 gnss.co.kr 이 한 건도 안 잡힘. 등록 자체가 안 된 것으로 보임</td></tr>
+<tr><td>지도 등록(네이버 플레이스·구글 비즈니스)</td><td class="s warn">확인 필요</td><td>검색 결과에 지도 항목이 안 나옴. 지점별 등록 여부 확인 필요</td></tr>
+<tr><td>주소 이름 <code>gnss</code></td><td class="s warn">불리</td><td>위성항법(GNSS) 용어와 겹쳐 "gnss"로 검색하면 위성 자료만 나옴. 페이지 제목에 "개념상상 수학학원"을 반드시 글자로 넣어야 함</td></tr>
+</table>
+
+<h2><i>2</i>할 일 — 효과 큰 순서</h2>
+<table class="steps">
+<tr><th style="width:8mm">순서</th><th style="width:48mm">할 일</th><th style="width:22mm">담당 · 소요</th><th>내용</th></tr>
+<tr><td>①</td><td>네이버 플레이스 · 구글 비즈니스 프로필에 <b>지점별 등록</b></td><td>지점 담당자 · 반나절</td><td>지점마다 이름(개념상상 대치관)·주소·전화·영업시간·홈페이지 주소·사진. 학원 검색의 절반은 지도 결과라 이것 하나로 효과가 가장 큼. 무료. 이미 있으면 정보가 홈페이지와 같은지 맞추기</td></tr>
+<tr><td>②</td><td>검색 포털 <b>등록 3곳</b></td><td>홈페이지 관리자 · 30분</td><td>구글 서치콘솔 · 빙 웹마스터 도구 · 네이버 서치어드바이저에 gnss.co.kr 등록 → HTML 태그로 소유 확인 → 사이트맵(<code>https://gnss.co.kr/sitemap.xml</code>) 제출. 빙은 구글에서 가져오기 한 번</td></tr>
+<tr><td>③</td><td>본문을 <b>글자로</b> 내려 주기</td><td>홈페이지 제작사 · 요청</td><td>"검색 로봇이 읽을 수 있게 서버에서 글자로 렌더링해 달라(서버 사이드 렌더링)". 최소한 첫 화면과 지점 페이지마다 학원 이름·주소·전화·과목·대상 학년을 일반 글자로, 페이지 제목(title)을 "개념상상 수학학원 대치관 | 고등 내신·수능" 꼴로</td></tr>
+<tr><td>④</td><td>지점 페이지에 <b>구조화 표기</b></td><td>제작사 · ③과 함께</td><td>학원 정보를 기계용 형식(schema.org EducationalOrganization: 이름·주소·전화·지점)으로 적어 두면 구글·AI 검색이 지점 정보를 그대로 읽어 감</td></tr>
+</table>
+
+<div class="note"><b>참고.</b> 중대부고 1학년 반 소개 페이지 <b>mlabmath.com</b>은 10월 13일에 ②·④를 적용해 공개했고 구글·빙·네이버 등록을 마쳤습니다. 같은 절차를 학원 홈페이지에 적용하면 됩니다. 네이버 플레이스의 홈페이지 칸에 mlabmath.com 을 함께 적어 주시면 두 페이지가 서로 연결되어 둘 다 검색에 유리합니다.<br>
+등록 주소 — 구글 search.google.com/search-console · 빙 bing.com/webmasters · 네이버 searchadvisor.naver.com · 네이버 플레이스 smartplace.naver.com · 구글 비즈니스 business.google.com</div>
+
+<div class="ft"><span>진단 방법: robots.txt·사이트맵 조회, 첫 화면 본문 글자 수 실측(스크립트 제외), 웹 검색 5회("개념상상 수학학원 대치동" 등) · 2026-10-13</span><span>개념상상 박민수T</span></div>
+</body></html>
