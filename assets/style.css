@@ -75,6 +75,10 @@ h3{font-size:17px;color:var(--navy);font-weight:800;margin-top:36px}
 .step em{font-style:normal;display:inline-block;font-size:11.5px;font-weight:800;color:var(--blue);background:var(--tint);padding:3px 9px;border-radius:12px;margin-bottom:10px}
 .step b{display:block;font-size:16px}
 .step p{font-size:13.5px;margin-top:6px;line-height:1.6}
+.card.why{position:relative;padding-top:22px}
+.card.why i{display:block;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--blue)}
+.card.why b{display:block;font-size:19px;color:var(--navy);margin-top:8px;letter-spacing:-.01em}
+.card.why p{font-size:14px;margin-top:10px;line-height:1.65}
 .callout{font-size:clamp(17px,2vw,21px);line-height:1.65;font-weight:600;color:#fff}
 .callout small{display:block;font-size:14px;color:#aebdd8;font-weight:400;margin-top:10px}
 
