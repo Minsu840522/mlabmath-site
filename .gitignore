@@ -1,0 +1,68 @@
+# ── caches / build ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+node_modules/
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# ── data 폴더: 폴더는 유지(.gitkeep), 내용물은 git 제외 ──
+/data/*
+!/data/.gitkeep
+
+# ── data / large binaries (의도적으로 git 제외) ──
+*.bak
+*.db
+*.db-wal
+*.sqlite*
+*.exe
+*.pkg
+*.pyz
+*.zip
+*.7z
+*.pdf
+*.mp4
+# 한글 문서 데이터
+*.hwp
+*.hwpx
+*.hwtx
+# 표/이미지 데이터
+*.csv
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+# models
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.ckpt
+# browser / extracted work
+.pw_profile/
+**/Cache/
+extracted/
+extracted_target/
+
+# secrets (절대 커밋 금지)
+.env
+.env.*
+!.env.example
+nas_credentials.py
+!nas_credentials.py.example
+secrets.json
+.api_key
+.siliconflow_api_key
+*.key
+*.pem
