@@ -55,6 +55,9 @@ node_modules/
 extracted/
 extracted_target/
 
+# ── 사이트 자산은 예외: 페이지에 들어가는 그림은 추적한다 ──
+!/assets/**
+
 # secrets (절대 커밋 금지)
 .env
 .env.*
