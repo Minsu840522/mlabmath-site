@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b4dff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261013b">
+<link rel="stylesheet" href="assets/style.css?v=20261013c">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,7 +94,7 @@
       <p class="lead">시험이 어디서 어떻게 바뀌어 나오는지 분석하고, 매 수업의 기록으로 빈 곳을 찾아 채웁니다. 틀린 문제는 변형으로 두 번 맞혀야 끝납니다.</p>
       <div class="cta">
         <a class="btn big" href="tel:+82-2-566-0508">📞 상담 전화 02-566-0508</a>
-        <a class="btn big ghost" href="#system">수업 방식 보기</a>
+        <a class="btn big ghost pc-only" href="#system">수업 방식 보기</a>
       </div>
     </div>
     <div class="photo">
@@ -129,7 +129,7 @@
     <h3>학부모 화면 — 휴대폰으로 언제든</h3>
     <div class="grid3" style="margin-top:14px">
       <div class="card">
-        <b>현황</b><p class="mini">점수 추이 · 틀린 이유 · 과제 검사 · 보충 이력 · 코멘트</p>
+        <b>현황</b><p class="mini">점수 추이 · 틀린 이유 · 과제 검사 · 보충 이력 · 코멘트<span class="m-only"> · 보충 예약까지 휴대폰에서 직접</span></p>
         <div class="mock" aria-label="학부모 화면 예시: 테스트 점수 추이">
           <div class="mh">테스트 점수 추이 <span>예시 · 내 점수 / 반 평균</span></div>
           <div class="trend">
@@ -142,14 +142,14 @@
           <div class="chips" style="margin-top:10px"><span class="chip sm c">개념 2</span><span class="chip sm r">조건 1</span><span class="chip sm m">계산 1</span><span class="chip sm a">접근 1</span></div>
         </div>
       </div>
-      <div class="card">
+      <div class="card pc-only">
         <b>보충·숙제</b><p class="mini">보충 기준에 얼마나 가까운지 미리 보입니다.</p>
         <div class="mock" aria-label="학부모 화면 예시: 보충 상태 띠">
           <div class="mh">이번 주 상태 <span>예시</span></div>
           <div class="band"><span class="warn">과제 미제출 1 / 2</span><span class="ok">풀이 70% 미만 0 / 2</span><span class="ok">최근 테스트 72점 (기준 60)</span></div>
         </div>
       </div>
-      <div class="card">
+      <div class="card pc-only">
         <b>보충 예약</b><p class="mini">월~금 시간표에서 학부모가 직접 잡고 취소합니다.</p>
         <div class="mock" aria-label="학부모 화면 예시: 보충 예약 격자">
           <div class="mh">보충 예약 <span>예시</span></div>
@@ -273,7 +273,9 @@
       <div class="card stat"><b>0 문항</b><span>그대로 나온 문항.<br>숫자 변경 9 · 조건 변경 9 · 두 문항 결합 5</span></div>
     </div>
 
-    <h3>배점 자리마다 출처가 다릅니다 — 3층 구조</h3>
+    <details class="more mfold">
+    <summary>자세히 보기 — 배점 자리마다 다른 출처(3층 구조)와 변형 방식</summary>
+    <h3 class="pc-only">배점 자리마다 출처가 다릅니다 — 3층 구조</h3>
     <div class="card tscroll" style="margin-top:14px;padding:6px 10px">
       <table class="tbl">
         <thead><tr><th>층</th><th>자리</th><th>원본</th><th>바꾸는 정도</th></tr></thead>
@@ -286,6 +288,7 @@
     </div>
 
     <div class="chips"><span class="chip">숫자·소재 바꾸기</span><span class="chip">거꾸로 묻기</span><span class="chip">구조 가리기</span><span class="chip">발판 제거</span><span class="chip">늘리기</span><span class="chip">두 문항 결합</span></div>
+    </details>
 
     <details class="more">
       <summary>자세히 보기 — 변형 방식 여섯 가지</summary>
@@ -315,9 +318,9 @@
         <b>출제 원천</b>
         <div class="bar"><div class="lab">부교재 15문항</div><div class="trk"><i class="c-b1" style="width:73%"></i></div><div class="val">73점</div></div>
         <div class="bar"><div class="lab">교과서 8문항</div><div class="trk"><i class="c-b3" style="width:27%"></i></div><div class="val">27점</div></div>
-        <p class="mini" style="margin-top:14px;color:var(--mute)">선택형 1~5번·서답형 앞 세 문항이 교과서, 나머지는 전부 부교재.</p>
+        <p class="mini" style="margin-top:14px;color:var(--mute)">선택형 1~5번·서답형 앞 세 문항이 교과서, 나머지는 전부 부교재.<span class="m-only"> 난이도 하 7 · 중 7 · 상 6 · 극상 3. 집합 8문항으로 최대 단원.</span></p>
       </div>
-      <div class="card">
+      <div class="card pc-only">
         <b>단원별 난이도</b>
         <div class="legend"><span><i class="c-lo"></i>하 7</span><span><i class="c-mid"></i>중 7</span><span><i class="c-hi"></i>상 6</span><span><i class="c-kill"></i>극상 3</span></div>
         <div class="bar"><div class="lab">평면좌표·직선</div><div class="trk"><i class="c-lo" style="width:37.5%"></i><i class="c-hi" style="width:12.5%"></i></div><div class="val">4</div></div>
@@ -359,6 +362,8 @@
       <p class="same">같은 직선 y=3x, 같은 조건 구조. 반지름과 거리의 숫자만 다릅니다.</p>
     </div>
 
+    <details class="more mfold">
+    <summary>자세히 보기 — 극상 20번 비교</summary>
     <div class="card cmp">
       <div class="head"><span class="pill">20번</span><span class="ttl">원의 방정식 · 단답형 4점</span><span class="pill r">극상 · 구조 일치</span></div>
       <div class="pair">
@@ -367,6 +372,7 @@
       </div>
       <p class="same">중심이 이차함수 그래프 위에 있고 직선과 축에 동시에 접하는 원의 개수를 따지는 설정이 같습니다.</p>
     </div>
+    </details>
     <p class="mini" style="margin-top:14px;color:var(--mute)">집계는 학습 관리 시스템의 과제·테스트 출제 이력(2026년 8월 17일 ~ 10월 1일) 기준. 나머지 비교 쌍은 상담에서 보여 드립니다.</p>
   </div>
 </section>
@@ -460,5 +466,12 @@
 
 <a class="fab" href="tel:+82-2-566-0508">📞 상담 전화 02-566-0508</a>
 
+<script>
+(function(){
+  var q=window.matchMedia('(min-width:901px)');
+  function sync(){document.querySelectorAll('details.mfold').forEach(function(d){d.open=q.matches;});}
+  sync(); q.addEventListener?q.addEventListener('change',sync):q.addListener(sync);
+})();
+</script>
 </body>
 </html>

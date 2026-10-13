@@ -211,21 +211,50 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
 footer a{color:#8ea1c8}
 .fab{display:none}
 
+/* 기기별 보이기 — PC(901px~)는 전부, 휴대폰은 핵심만 */
+.m-only{display:none}
+@media (min-width:901px){
+  details.mfold>summary{display:none}
+  details.mfold{margin-top:0}
+}
 @media (max-width:900px){
-  .hero .hwrap{grid-template-columns:1fr;padding-top:48px}
-  .hero .txt{padding-bottom:28px}
-  .photo img{width:min(78%,340px)}
-  .photo .name{left:8px;bottom:24px}
-  .kpis,.grid4,.road{grid-template-columns:1fr 1fr}
+  .pc-only{display:none !important}
+  .m-only{display:inline}
+  .hero .hwrap{grid-template-columns:1fr;padding-top:40px;gap:0}
+  .hero .txt{padding-bottom:18px}
+  .hero h1{font-size:clamp(30px,8.5vw,40px)}
+  .hero p.lead{font-size:15px;margin-top:14px}
+  .hero .cta{margin-top:22px}
+  .hero .cta .btn.big{font-size:16px;padding:14px 20px}
+  .photo img{width:min(58%,250px)}
+  .photo .name{left:0;bottom:22px;padding:9px 12px}
+  .photo .name b{font-size:15px}.photo .name span{font-size:11.5px}
+  .kband .wrap{padding:16px 20px}
+  .kpis{grid-template-columns:1fr 1fr;gap:10px 14px}
+  .kpi b{font-size:24px}.kpi span{font-size:12px;margin-top:5px}
+  h2{font-size:clamp(23px,6.6vw,30px)}
+  .one{font-size:14.5px}
+  h3{font-size:16px;margin-top:28px}
+  .grid4{grid-template-columns:1fr;gap:8px}
+  .grid4 .card.step{display:grid;grid-template-columns:1fr;padding:14px 16px}
+  .step em{margin-bottom:6px}.step b{font-size:15px}.step p{font-size:13px;margin-top:3px}
+  .road{grid-template-columns:1fr;gap:8px}
+  .road li{display:grid;grid-template-columns:34px 1fr;column-gap:12px;padding:14px 16px}
+  .road .st{grid-row:1/4}.road b{margin-top:0;grid-column:2}.road em,.road p{grid-column:2}.road p{margin-top:4px}
+  .stat b{font-size:26px}
   .grid2,.grid3,.cmp .pair,.contact .box{grid-template-columns:1fr}
+  .grid3{gap:10px}.grid2{gap:10px}
   .stepper{grid-template-columns:1fr;row-gap:16px}
   .stepper li{display:grid;grid-template-columns:38px 1fr;column-gap:14px;text-align:left;padding:0;align-items:start}
   .stepper i{grid-row:1/3}
   .stepper b{margin-top:8px;grid-column:2}
   .stepper span{grid-column:2}
   .stepper li:not(:last-child):after{top:42px;left:18px;right:auto;width:2px;height:calc(100% - 24px)}
-  section{padding:52px 0}
-  .card{padding:20px 18px}
+  section{padding:44px 0}
+  .card{padding:18px 16px;border-radius:14px}
+  .callout{font-size:17px}.callout small{font-size:13px}
+  .proof .big{font-size:38px}.proof p{font-size:14px}
+  .rules span{font-size:12.5px;padding:7px 10px}
   .bar .lab{width:92px;font-size:13px}
   .fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:30;justify-content:center;align-items:center;gap:10px;background:var(--blue);color:#fff;font-weight:800;font-size:17px;padding:15px;border-radius:14px;box-shadow:0 10px 28px rgba(27,77,255,.35)}
   .fab:hover{text-decoration:none}
