@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b4dff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261013b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -209,16 +209,13 @@
     <p class="one">한 주 동안 틀린 문제는 사라지지 않고 대기열에 남습니다. 토요일마다 그 학생만의 확인지로 다시 풉니다.</p>
 
     <div class="card" style="margin-top:28px">
-      <div class="grad">
-        <div class="g"><b>틀림</b><span>과제·테스트 오답이<br>내 대기열에</span></div>
-        <div class="arrow">○</div>
-        <div class="g"><b>1차 확인</b><span>숫자를 바꾼 변형</span></div>
-        <div class="arrow">○</div>
-        <div class="g"><b>2차 확인</b><span>조건을 바꾼 변형<br>(다음 주)</span></div>
-        <div class="arrow">○</div>
-        <div class="g done"><b>졸업</b><span>두 번 연속 맞힘</span></div>
-      </div>
-      <div class="rules" style="margin-top:18px">
+      <ol class="stepper">
+        <li><i>✗</i><b>틀림</b><span>과제·테스트 오답이 내 대기열에</span></li>
+        <li><i>1</i><b>1차 확인</b><span>숫자를 바꾼 변형 · 이번 주 클리닉</span></li>
+        <li><i>2</i><b>2차 확인</b><span>조건을 바꾼 변형 · 다음 주 클리닉</span></li>
+        <li class="done"><i>✓</i><b>졸업</b><span>두 번 연속 맞힘</span></li>
+      </ol>
+      <div class="rules" style="margin-top:22px">
         <span><i>✗</i>틀리면 처음으로</span><span><i>△</i>풀이 없이 답만 맞으면 제자리</span><span><i>○</i>해설 없이 혼자 힘으로</span>
       </div>
     </div>
