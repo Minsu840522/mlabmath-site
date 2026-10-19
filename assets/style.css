@@ -209,6 +209,22 @@ ul.list li:before{content:"";position:absolute;left:0;top:10px;width:7px;height:
 .contact dd{color:#fff}
 .contact .bigtel{font-size:clamp(28px,4vw,40px);font-weight:800;color:#fff;letter-spacing:.01em;margin-top:8px;display:block}
 .contact .bigtel:hover{text-decoration:none;color:#5f87ff}
+.cform{display:grid;gap:12px;margin-top:16px}
+.cform label{display:grid;gap:6px;font-size:13.5px;color:#aebdd8;font-weight:700}
+.cform label b{color:var(--gold)}
+.cform input,.cform select,.cform textarea{font:inherit;font-size:16px;font-weight:400;color:var(--ink);background:#fff;border:1px solid #ffffff33;border-radius:10px;padding:11px 12px;width:100%;box-sizing:border-box}
+.cform textarea{resize:vertical}
+.cform .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cform .agree{display:flex;align-items:center;gap:8px;font-weight:700;color:#fff}
+.cform .agree input{width:20px;height:20px;padding:0;flex:none}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .privacy{font-size:12.5px;color:#8ea1c8;margin-top:-6px}
+.cform .privacy summary{cursor:pointer}
+.cform .btn{justify-content:center;border:0;cursor:pointer}
+.cform .btn:disabled{opacity:.6;cursor:wait}
+.cform .cmsg{min-height:1.4em;font-size:14.5px;margin:0}
+.cform .cmsg.ok{color:#9fe0b5}
+.cform .cmsg.err{color:#ffb4a6}
 
 footer{background:#0a1830;color:#6a7fa8;font-size:12.5px;padding:26px 0 40px}
 footer .wrap{display:flex;flex-direction:column;gap:6px}
